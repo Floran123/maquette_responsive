@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>Safy</title>
+</head>
+<body>
+  <div class="container">
+  <header>
+    <div id="hautt"> 
+      <div id="haut">
+       <img src="images/19.png" alt="twitter" >
+       <img src="images/20.png" alt="facebook" >
+     </div>
+     
+    </div>
+    <nav>
+        <div id="safy">
+        <img src="images/safy.png" alt="mobile" id="saf">
+                
+        </div>
+        <div id="navbar">
+          <ul>
+
+            <li>Home</li>
+            <li>Book</li>
+            <li>Destinations</li>            
+            <li>Prices</li>
+            <li>Alerts</li>
+            <li>Contact</li>
+
+          </ul>
+        </div>
+    </nav>
+
+  </header>
+
+  <div id="bdy">  
+  <div class="slideshow-container">
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 6</div>
+        <img src="images/6.jpg" alt="travel" style="width: 100%"  >
+        
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 6</div>
+        <img src="images/7.jpg" alt="plage" style="width: 100%" >
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 6</div>
+        <img src="images/8.jpg" alt="escalade" style="width: 100%" >
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">4 / 6</div>
+        <img src="images/9.jpg" alt="voiture" style="width: 100%" >
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">5 / 6</div>
+        <img src="images/10.jpg" alt="surf" style="width: 100%" >
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">6 / 6</div>
+        <img src="images/11.jpg" alt="vague" style="width: 100%"  >
+      </div>
+    
+    <img src="images/2.png" alt="fleche" class="prev" onclick="plusSlides(-1)">
+    <img src="images/2.png" alt="fleche" class="next" onclick="plusSlides(1)">
+
+    <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+    <span class="dot" onclick="currentSlide(6)"></span>
+
+    </div>
+    </div>
+  </div>
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n){
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n){
+            showSlides(slideIndex = n);
+        }
+        function showSlides(n){
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if(n > slides.length) {slideIndex = 1}
+            if(n < 1) {slideIndex = slides.length}
+            for(i = 0; i < slides.length; i++){
+                slides[i].style.display = "none";
+            }
+            for(i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace("active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+        }
+
+    </script>
+     
+    <div class="step">
+    <section class="steps">
+        
+          <div class="log">
+            <img src="images/13.png" alt="feu" class="icone">
+            <p>Safe,structured and amazing application</p>
+          </div>
+          <div class="log">
+            <img src="images/17.png" alt="tante" class="icone">
+              <p>  The sun is shining today, book your trip</p>
+          </div>
+          <div class="log">
+            <img src="images/12.png" alt="patte" class="icone">
+            <p>Meet new people and live more intensely</p>
+         </div>
+        </section>
+            <section class="steps">
+               <div class="logg"> 
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi repellat reprehenderit, in eaque inventore ea accusantium, cumque rem nihil libero, reiciendis possimus harum autem dignissimos. Doloribus praesentium cupiditate porro necessitatibus.</p>
+            <a href="#">More info</a>
+              </div>
+              <div class="logg">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi repellat reprehenderit, in eaque inventore ea accusantium, cumque rem nihil libero, reiciendis possimus harum autem dignissimos. Doloribus praesentium cupiditate porro necessitatibus.</p>
+            <a href="#">More info</a>
+             </div>
+             <div class="logg">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi repellat reprehenderit, in eaque inventore ea accusantium, cumque rem nihil libero, reiciendis possimus harum autem dignissimos. Doloribus praesentium cupiditate porro necessitatibus.</p>
+            <a href="#">More info</a>
+            </div>
+        </section>
+    </div>
+    <h2>Destinations</h2>
+        <div id="drapo">
+            <div id="destination">
+            <img src="images/3.jpg" alt="france" >
+            </div>
+            
+            <div class="destination">
+            <img src="images/4.jpg" alt="bresil" class="dr" >
+            </div>
+            <div class="destination">
+            <img src="images/5.jpg" alt="algerie" class="dr">
+            </div>
+
+        </div>
+        <div id="pays">
+        <p id="france" > France</p>
+        <p id="algeria">Brazil</p>
+        <p id="brazil">Algeria</p>
+       </div>  
+    <div id="end">    
+    <section id="loggg">
+        
+            <div id="about">
+              <div>
+                  <h3>About Us</h3>
+              </div> 
+            <div class="about"> Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Repellat nostrum dolorum aperiam! Quia autem enim voluptatem deleniti<br> excepturi vel sapiente mollitia vitae deserunt perspiciatis culpa, <br>dolorum, exercitationem omnis tenetur quasi.</div><br><br>
+            <div class="about"> Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Aliquam, nesciunt voluptates enim autem accusantium deleniti saepe<br> architecto animi ipsam, sint quasi. Laborum est veritatis<br> quia enim officia distinctio vitae inventore!</div>
+            </div>   
+        
+            <div id="why">
+            <h3>Why Us</h3>
+            <div>
+            <p class="img"><img src="images/14.png" alt="horloge" id="horloge">Lorem ipsum dolor, sit amet consectetur adipisicing elit.<br> Dignissimos alias voluptatum in temporibus aut aspernatur perferendis.<br> Esse, nisi a accusamus qui et suscipit dolor, nemo ipsum voluptatum dolorem dicta fugit.</p>
+            </div>
+            <div>
+            <p class="img"><img src="images/15.png" alt="localisation" id="local">Lorem, ipsum dolor sit amet consectetur adipisicing elit.<br> Eum voluptates explicabo facilis praesentium esse, molestias vitae repellat minus,<br> optio vero doloremque consequatur? Nihil eum suscipit temporibus libero quaerat assumenda molestias.</p>
+            </div>
+            <div>
+            <p class="img"><img src="images/16.png" alt="velo" id="velo">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Cumque unde consequatur repudiandae iure doloribus suscipit est consequuntur sint esse error<br> nemo sed quam illo aspernatur quae temporibus, deleniti distinctio reiciendis.</p>
+            </div>
+           </div>
+        
+
+    </section>
+    <div id="travel">
+        
+            <h3>How to travel ?</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat porro voluptate, asperiores cupiditate natus voluptatem eos. In suscipit repellat ut incidunt debitis, explicabo repellendus labore aut excepturi ad. Quod, minima.</p>
+            <input type="button" value="subscribe" id="sub">
+        
+    </div>
+   </div>
+    <footer>
+        <div id="foot">
+          
+        <p id="fin">Home    Book    Destinations   Prices   Alerts    Contact</p><br>
+        <p class="copyright">Copyright © There is no birds here. Look around </p>
+        </div>
+    </footer>
+
+  </div>
+</body>
+</html>
